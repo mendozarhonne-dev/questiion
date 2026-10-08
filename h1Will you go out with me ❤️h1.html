@@ -1,0 +1,99 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Question</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #000000;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 600px;
+        }
+
+        h1 {
+            font-size: 40px;
+            margin-bottom: 40px;
+        }
+
+        button {
+            border: none;
+            padding: 15px 40px;
+            margin: 10px;
+            border-radius: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .samguita {
+            background: #22c55e;
+            color: white;
+        }
+
+        .starmall {
+            background: #ef4444;
+            color: white;
+        }
+
+        button:hover {
+            transform: scale(1.08);
+        }
+
+        #answer {
+            margin-top: 30px;
+            font-size: 28px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>san ka susunduin? ❤️</h1>
+
+        <button class="samguita" onclick="yesAnswer()">
+            samguita
+        </button>
+
+        <button class="starmall" onclick="noAnswer()">
+            starmall
+        </button>
+
+        <div id="answer"></div>
+
+    </div>
+
+    <script>
+        function yesAnswer() {
+            document.getElementById("answer").innerHTML =
+                "YAY! ❤️🥰";
+        }
+
+        function noAnswer() {
+            document.getElementById("answer").innerHTML =
+                "Are you sure? 😭";
+        }
+    </script>
+
+</body>
+</html>
+```
